@@ -1,0 +1,57 @@
+Current directory: /Users/andysoft/machinestudy/
+Command: pdb /Users/andysoft/machinestudy/matplotlibdemo.py
+(file-error "Searching for program" "No such file or directory" "pdb")
+Failed to invoke debugger pdb on program pdb with args /Users/andysoft/machinestudy/matplotlibdemo.py
+Current directory: /Users/andysoft/machinestudy/
+Command: python -i -m pdb /Users/andysoft/machinestudy/matplotlibdemo.py
+> /Users/andysoft/machinestudy/matplotlibdemo.py(1)<module>()
+-> import matplotlib.pyplot as plt
+(Pdb) break /Users/andysoft/machinestudy/matplotlibdemo.py:13
+Breakpoint 1 at /Users/andysoft/machinestudy/matplotlibdemo.py:13
+(Pdb) n
+> /Users/andysoft/machinestudy/matplotlibdemo.py(2)<module>()
+-> import numpy as np
+(Pdb) c
+> /Users/andysoft/machinestudy/matplotlibdemo.py(13)<module>()
+-> error = np.random.rand(len(people))
+(Pdb) p y_pos
+array([0, 1, 2, 3, 4])
+(Pdb) p perfromance
+*** NameError: NameError("name 'perfromance' is not defined",)
+(Pdb) p performance
+array([ 12.05237518,  10.84572747,   7.61673894,  10.78155884,   7.1999066 ])
+(Pdb) p ax
+<matplotlib.axes._subplots.AxesSubplot object at 0x10ae6f7d0>
+(Pdb) p fig
+<matplotlib.figure.Figure object at 0x10a4aea90>
+(Pdb) n
+> /Users/andysoft/machinestudy/matplotlibdemo.py(16)<module>()
+-> ax.barh(y_pos, performance, xerr=error,
+(Pdb) n
+> /Users/andysoft/machinestudy/matplotlibdemo.py(17)<module>()
+-> align='center', color='red', ecolor='black')
+(Pdb) c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+f
+f
+f
+f
+f
+f
+f
+ff
+finish
