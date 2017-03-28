@@ -70,8 +70,9 @@ def autoNorm(dataSet):
     normDataSet = normDataSet / tile(ranges, (m, 1))
     return normDataSet, ranges, minVals
 
-
 # 测试代码
+
+
 def datingClassTest():
     hoRatio = 0.10
     datingDataMat, datingLabels = file2matrix('datingTestSet2.txt')
